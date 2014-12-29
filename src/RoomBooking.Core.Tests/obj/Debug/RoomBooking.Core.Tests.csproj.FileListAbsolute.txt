@@ -1,8 +1,0 @@
-C:\dev\room-booking\src\RoomBooking.Core.Tests\bin\Debug\RoomBooking.Core.Tests.dll
-C:\dev\room-booking\src\RoomBooking.Core.Tests\bin\Debug\RoomBooking.Core.Tests.pdb
-C:\dev\room-booking\src\RoomBooking.Core.Tests\obj\Debug\RoomBooking.Core.Tests.csprojResolveAssemblyReference.cache
-C:\dev\room-booking\src\RoomBooking.Core.Tests\obj\Debug\RoomBooking.Core.Tests.dll
-C:\dev\room-booking\src\RoomBooking.Core.Tests\obj\Debug\RoomBooking.Core.Tests.pdb
-C:\dev\room-booking\src\RoomBooking.Core.Tests\bin\Debug\RoomBooking.Core.dll
-C:\dev\room-booking\src\RoomBooking.Core.Tests\bin\Debug\RoomBooking.Core.pdb
-C:\dev\room-booking\src\RoomBooking.Core.Tests\bin\Debug\en-US\RoomBooking.Core.resources.dll
