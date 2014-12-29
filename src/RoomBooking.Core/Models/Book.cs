@@ -1,24 +1,26 @@
-﻿using System;
+﻿using RoomBooking.Core.Enums;
+using System;
 
 namespace RoomBooking.Core.Models
 {
     public class Book
     {
-        public Book(string name, string email, DateTime startTime, DateTime endTime)
+        public Book(Room room, DateTime startDate, DateTime endDate)
         {
-            this.Id = new Guid();
-            this.Name = name;
-            this.Email = email;
-            this.StartTime = startTime;
-            this.EndTime = endTime;
+            if (startDate.TimeOfDay < room.StartTime.TimeOfDay)
+            {
+                throw new Exception("Hora inválida");
+            }
+
+            this.Room = room;
+            this.Status = EBookStatus.InProgress;
+            this.StartDate = startDate;
+            this.EndDate = endDate;
         }
 
-        protected Book() { }
-
-        public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-        public DateTime StartTime { get; private set; }
-        public DateTime EndTime { get; private set; }
+        public Room Room { get; private set; }
+        public EBookStatus Status { get; private set; }
+        public DateTime StartDate { get; private set; }
+        public DateTime EndDate { get; private set; }
     }
 }

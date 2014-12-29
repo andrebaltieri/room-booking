@@ -7,3 +7,13 @@ c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBoo
 c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Core\obj\Debug\RoomBooking.Core.Resources.ErrorMessages.en-US.resources
 c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Core\obj\Debug\RoomBooking.Core.csproj.GenerateResource.Cache
 c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Core\obj\Debug\en-US\RoomBooking.Core.resources.dll
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.csprojResolveAssemblyReference.cache
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.Resources.ErrorMessages.resources
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.Resources.ErrorMessages.en-US.resources
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.csproj.GenerateResource.Cache
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.dll
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\RoomBooking.Core.pdb
+C:\dev\room-booking\src\RoomBooking.Core\bin\Debug\RoomBooking.Core.dll
+C:\dev\room-booking\src\RoomBooking.Core\bin\Debug\RoomBooking.Core.pdb
+C:\dev\room-booking\src\RoomBooking.Core\bin\Debug\en-US\RoomBooking.Core.resources.dll
+C:\dev\room-booking\src\RoomBooking.Core\obj\Debug\en-US\RoomBooking.Core.resources.dll

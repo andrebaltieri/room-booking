@@ -48,7 +48,7 @@ namespace RoomBooking.Core.Helpers
 
         public static void EnsureHourIsLessOrEqualThan(int startHour, int endHour, string errorMessage)
         {
-            if (startHour => endHour)
+            if (startHour >= endHour)
                 throw new Exception(errorMessage);
         }
     }
