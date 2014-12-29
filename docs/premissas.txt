@@ -1,0 +1,12 @@
+- Usuário deve ter um registro para reservar a sala
+- O administrador deve aprovar a reserva
+- Ao reservar um sala, o administrador e o usuário são notificados
+- Ao aprovar a reserva, o usuário é notificado
+- Toda sala tem um horário de abertura e fechamento
+- As salas não ficam disponíveis em sábados, domingos e feriados
+- O cancelamento da sala pode ser feito em até 2 horas antes de seu uso
+- A sala pode ser reservada por no máximo duas horas
+- Ao comparecer na recepção para uso da sala, o administrador deve marcar a reserva como em uso
+- Durante o uso da sala, a mesma deve ficar com status OCUPADO
+- Após o uso da sala o administrador deve marcar a reserva como finalizada e colocar suas observações
+- Um log é gerado com a hora da reserva e hora que a sala foi ocupada
