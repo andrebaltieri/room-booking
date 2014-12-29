@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Enums\EBookStatus.cs" />
     <Compile Include="Helpers\ValidatorHelper.cs" />
+    <Compile Include="Interfaces\Repositories\IBookRepository.cs" />
     <Compile Include="Interfaces\Services\INotificationService.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Room.cs" />
@@ -66,9 +67,7 @@
       <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

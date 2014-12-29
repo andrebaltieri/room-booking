@@ -20,8 +20,8 @@ namespace RoomBooking.Core.Tests
         [TestCategory("Dada uma nova reserva")]
         public void Deve_retornar_em_aberto_quando_consultado_o_status()
         {
-            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 08, 0, 0);
-            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 10, 0, 0);
+            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(1).Day, 8, 0, 0);
+            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(1).Day, 10, 0, 0);
             var book = new Book(_room, startTime, endTime);
             Assert.AreEqual(EBookStatus.InProgress, book.Status);
         }
@@ -43,8 +43,12 @@ namespace RoomBooking.Core.Tests
         [TestCategory("Dada uma nova reserva")]
         [ExpectedException(typeof(Exception))]
         public void Deve_retornar_erro_caso_a_reserva_ultrapasse_duas_horas()
-        {
+        {            
+            // Tenta efetuar uma reserva das 08:00 às 12:00
+            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 8, 0, 0);
+            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 12, 0, 0);
 
+            var book = new Book(_room, startTime, endTime);
         }
 
         [TestMethod]
@@ -52,55 +56,84 @@ namespace RoomBooking.Core.Tests
         [ExpectedException(typeof(Exception))]
         public void Deve_retornar_erro_caso_a_data_da_reserva_seja_no_passado()
         {
+            // Tenta efetuar uma reserva das 08:00 às 12:00
+            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(-1).Day, 8, 0, 0);
+            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(-1).Day, 10, 0, 0);
 
+            var book = new Book(_room, startTime, endTime);
         }
 
         [TestMethod]
         [TestCategory("Dada uma nova reserva")]
+        [ExpectedException(typeof(Exception))]
         public void Deve_retornar_erro_caso_o_horario_da_reserva_seja_posterior_ao_fechamento_da_sala()
         {
-            Assert.Fail();
+            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 17, 0, 0);
+            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 19, 0, 0);
+
+            var book = new Book(_room, startTime, endTime);
         }
 
         [TestMethod]
         [TestCategory("Dada uma nova reserva")]
+        [ExpectedException(typeof(Exception))]
         public void Deve_retornar_erro_caso_o_dia_da_reserva_seja_um_sabado()
         {
-            Assert.Fail();
+            DateTime weekend = DateTime.Now;
+            while (weekend.DayOfWeek != DayOfWeek.Saturday)
+                weekend = weekend.AddDays(1);
+
+            var startTime = new DateTime(weekend.Year, weekend.Month, weekend.Day, 10, 0, 0);
+            var endTime = new DateTime(weekend.Year, weekend.Month, weekend.Day, 12, 0, 0);
+
+            var book = new Book(_room, startTime, endTime);
         }
 
         [TestMethod]
         [TestCategory("Dada uma nova reserva")]
+        [ExpectedException(typeof(Exception))]
         public void Deve_retornar_erro_caso_o_dia_da_reserva_seja_um_domingo()
         {
-            Assert.Fail();
-        }
+            DateTime weekend = DateTime.Now;
+            while (weekend.DayOfWeek != DayOfWeek.Sunday)
+                weekend = weekend.AddDays(1);
 
-        [TestMethod]
-        [TestCategory("Dada uma nova reserva")]
-        public void Deve_retornar_erro_caso_o_dia_da_reserva_seja_um_feriado()
-        {
-            Assert.Fail();
-        }
+            var startTime = new DateTime(weekend.Year, weekend.Month, weekend.Day, 10, 0, 0);
+            var endTime = new DateTime(weekend.Year, weekend.Month, weekend.Day, 12, 0, 0);
 
-        [TestMethod]
-        [TestCategory("Dada uma nova reserva")]
-        public void Deve_retornar_erro_caso_ja_haja_uma_reserva_neste_dia_e_horario()
-        {
-            Assert.Fail();
-        }
+            var book = new Book(_room, startTime, endTime);
+        }        
 
         [TestMethod]
         [TestCategory("Dada uma nova reserva")]
         public void Deve_conseguir_efetuar_uma_reserva()
         {
-            Assert.Fail();
+            var startTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(1).Day, 8, 0, 0);
+            var endTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.AddDays(1).Day, 10, 0, 0);
+
+            var book = new Book(_room, startTime, endTime);
         }
     }
 
     [TestClass]
     public class Ao_confirmar_a_reserva
     {
+        [TestMethod]
+        [TestCategory("Ao confirmar uma reserva")]
+        [ExpectedException(typeof(Exception))]
+        public void Deve_retornar_erro_caso_o_dia_da_reserva_seja_um_feriado()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        [TestCategory("Ao confirmar uma reserva")]
+        [ExpectedException(typeof(Exception))]
+        public void Deve_retornar_erro_caso_ja_haja_uma_reserva_neste_dia_e_horario()
+        {
+            Assert.Fail();
+        }
+
         [TestMethod]
         [TestCategory("Ao confirmar uma reserva")]
         public void Deve_retornar_erro_caso_o_status_seja_cancelado()
