@@ -1,0 +1,5 @@
+c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Common\bin\Debug\RoomBooking.Common.dll
+c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Common\bin\Debug\RoomBooking.Common.pdb
+c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Common\obj\Debug\RoomBooking.Common.csprojResolveAssemblyReference.cache
+c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Common\obj\Debug\RoomBooking.Common.dll
+c:\users\andrebaltieri\documents\visual studio 2015\Projects\RoomBooking\RoomBooking.Common\obj\Debug\RoomBooking.Common.pdb
