@@ -117,25 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BookStartTimeMustBeFuture" xml:space="preserve">
-    <value>A hora de início da reserva não pode ser posterior a hora de término</value>
+  <data name="BookDateIsWeekend" xml:space="preserve">
+    <value>Não é possível realizar reservas aos finais de semanas.</value>
   </data>
-  <data name="RoomAlreadyBookedAtThisTime" xml:space="preserve">
-    <value>A sala já está reservada neste horário</value>
+  <data name="BookEndTimeMustBeLessThanRoomEndTime" xml:space="preserve">
+    <value>Reserva para as {0} não efetuada. A sala fecha as {1}.</value>
   </data>
-  <data name="RoomClosesAt" xml:space="preserve">
-    <value>A sala fecha as {0}</value>
+  <data name="BookHasANullRoom" xml:space="preserve">
+    <value>Sala inválida.</value>
   </data>
-  <data name="RoomMustClosesBefore" xml:space="preserve">
-    <value>Uma sala deve fechar antes das 18:00</value>
+  <data name="BookHasANullUser" xml:space="preserve">
+    <value>Usuário inválido.</value>
   </data>
-  <data name="RoomMustOpensAfter" xml:space="preserve">
-    <value>Uma sala só pode abrir após as 08:00</value>
+  <data name="BookStartTimeMustBeGreaterThanRoomStartTime" xml:space="preserve">
+    <value>Reserva para as {0} não efetuada. A sala só abre as {1}.</value>
   </data>
-  <data name="RoomOpensAt" xml:space="preserve">
-    <value>A sala só abre as {0}</value>
+  <data name="BookStartTimeMustBeInFuture" xml:space="preserve">
+    <value>Não é possível realizar uma reserva no passado.</value>
   </data>
-  <data name="RoomStartTimeMustBeFuture" xml:space="preserve">
-    <value>A hora de abertura da sala não pode ser posterior a hora de fechamento</value>
+  <data name="BookTimeTotalShouldBeLessThan" xml:space="preserve">
+    <value>A reserva não pode ultrapassar {0} horas.</value>
+  </data>
+  <data name="PasswordNotMatch" xml:space="preserve">
+    <value>As senhas digitadas não coincidem.</value>
+  </data>
+  <data name="UserHasANullRole" xml:space="preserve">
+    <value>Este perfil não é válido.</value>
+  </data>
+  <data name="UserHasANullRoleList" xml:space="preserve">
+    <value>Falha ao determinar a lista de perfis do usuário.</value>
   </data>
 </root>

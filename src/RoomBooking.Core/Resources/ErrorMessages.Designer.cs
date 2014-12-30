@@ -61,65 +61,92 @@ namespace RoomBooking.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A hora de início da reserva não pode ser posterior a hora de término.
+        ///   Looks up a localized string similar to Não é possível realizar reservas aos finais de semanas..
         /// </summary>
-        public static string BookStartTimeMustBeFuture {
+        public static string BookDateIsWeekend {
             get {
-                return ResourceManager.GetString("BookStartTimeMustBeFuture", resourceCulture);
+                return ResourceManager.GetString("BookDateIsWeekend", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A sala já está reservada neste horário.
+        ///   Looks up a localized string similar to Reserva para as {0} não efetuada. A sala fecha as {1}..
         /// </summary>
-        public static string RoomAlreadyBookedAtThisTime {
+        public static string BookEndTimeMustBeLessThanRoomEndTime {
             get {
-                return ResourceManager.GetString("RoomAlreadyBookedAtThisTime", resourceCulture);
+                return ResourceManager.GetString("BookEndTimeMustBeLessThanRoomEndTime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A sala fecha as {0}.
+        ///   Looks up a localized string similar to Sala inválida..
         /// </summary>
-        public static string RoomClosesAt {
+        public static string BookHasANullRoom {
             get {
-                return ResourceManager.GetString("RoomClosesAt", resourceCulture);
+                return ResourceManager.GetString("BookHasANullRoom", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uma sala deve fechar antes das 18:00.
+        ///   Looks up a localized string similar to Usuário inválido..
         /// </summary>
-        public static string RoomMustClosesBefore {
+        public static string BookHasANullUser {
             get {
-                return ResourceManager.GetString("RoomMustClosesBefore", resourceCulture);
+                return ResourceManager.GetString("BookHasANullUser", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uma sala só pode abrir após as 08:00.
+        ///   Looks up a localized string similar to Reserva para as {0} não efetuada. A sala só abre as {1}..
         /// </summary>
-        public static string RoomMustOpensAfter {
+        public static string BookStartTimeMustBeGreaterThanRoomStartTime {
             get {
-                return ResourceManager.GetString("RoomMustOpensAfter", resourceCulture);
+                return ResourceManager.GetString("BookStartTimeMustBeGreaterThanRoomStartTime", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A sala só abre as {0}.
+        ///   Looks up a localized string similar to Não é possível realizar uma reserva no passado..
         /// </summary>
-        public static string RoomOpensAt {
+        public static string BookStartTimeMustBeInFuture {
             get {
-                return ResourceManager.GetString("RoomOpensAt", resourceCulture);
+                return ResourceManager.GetString("BookStartTimeMustBeInFuture", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A hora de abertura da sala não pode ser posterior a hora de fechamento.
+        ///   Looks up a localized string similar to A reserva não pode ultrapassar {0} horas..
         /// </summary>
-        public static string RoomStartTimeMustBeFuture {
+        public static string BookTimeTotalShouldBeLessThan {
             get {
-                return ResourceManager.GetString("RoomStartTimeMustBeFuture", resourceCulture);
+                return ResourceManager.GetString("BookTimeTotalShouldBeLessThan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As senhas digitadas não coincidem..
+        /// </summary>
+        public static string PasswordNotMatch {
+            get {
+                return ResourceManager.GetString("PasswordNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Este perfil não é válido..
+        /// </summary>
+        public static string UserHasANullRole {
+            get {
+                return ResourceManager.GetString("UserHasANullRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Falha ao determinar a lista de perfis do usuário..
+        /// </summary>
+        public static string UserHasANullRoleList {
+            get {
+                return ResourceManager.GetString("UserHasANullRoleList", resourceCulture);
             }
         }
     }

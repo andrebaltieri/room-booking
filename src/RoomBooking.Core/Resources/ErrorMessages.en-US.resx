@@ -117,25 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BookStartTimeMustBeFuture" xml:space="preserve">
-    <value>The book start time must be greater than the book end time</value>
+  <data name="BookDateIsWeekend" xml:space="preserve">
+    <value>Cannot book a room on weekends.</value>
   </data>
-  <data name="RoomAlreadyBookedAtThisTime" xml:space="preserve">
-    <value>The room is already booked at this time</value>
+  <data name="BookEndTimeMustBeLessThanRoomEndTime" xml:space="preserve">
+    <value>Booking fot {0} not created. The room closes at {1}.</value>
   </data>
-  <data name="RoomClosesAt" xml:space="preserve">
-    <value>This room closes at {0}</value>
+  <data name="BookHasANullRoom" xml:space="preserve">
+    <value>Invalid room.</value>
   </data>
-  <data name="RoomMustClosesBefore" xml:space="preserve">
-    <value>A room must close before 18:00</value>
+  <data name="BookHasANullUser" xml:space="preserve">
+    <value>Invalid user.</value>
   </data>
-  <data name="RoomMustOpensAfter" xml:space="preserve">
-    <value>A room can start open at 08:00</value>
+  <data name="BookStartTimeMustBeGreaterThanRoomStartTime" xml:space="preserve">
+    <value>Booking for {0} not created. The room opens at {1}.</value>
   </data>
-  <data name="RoomOpensAt" xml:space="preserve">
-    <value>This room only opens at {0}</value>
+  <data name="BookStartTimeMustBeInFuture" xml:space="preserve">
+    <value>Cannot book with a past date.</value>
   </data>
-  <data name="RoomStartTimeMustBeFuture" xml:space="preserve">
-    <value>The room start time cannot be greater than room end time</value>
+  <data name="BookTimeTotalShouldBeLessThan" xml:space="preserve">
+    <value>The booking cannot have more than {0} hours.</value>
+  </data>
+  <data name="PasswordNotMatch" xml:space="preserve">
+    <value>The passwords does not match.</value>
+  </data>
+  <data name="UserHasANullRole" xml:space="preserve">
+    <value>This role is not valid.</value>
+  </data>
+  <data name="UserHasANullRoleList" xml:space="preserve">
+    <value>Failed to determine user roles.</value>
   </data>
 </root>
