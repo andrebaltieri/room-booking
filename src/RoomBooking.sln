@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBooking.Common", "RoomB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBooking.Core.Tests", "RoomBooking.Core.Tests\RoomBooking.Core.Tests.csproj", "{A31E1C54-270D-466B-BB60-F8A79F6AAF4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBooking.Infraestructure", "RoomBooking.Infraestructure\RoomBooking.Infraestructure.csproj", "{A56DAEDC-6B91-4283-AB30-7B25D3CBE04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBooking.Business", "RoomBooking.Business\RoomBooking.Business.csproj", "{543B9A99-A5F5-439A-A41C-6D832A5281D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBooking.Api", "RoomBooking.Api\RoomBooking.Api.csproj", "{FC8648E6-E814-4541-9F21-8DD75CD06D76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{A31E1C54-270D-466B-BB60-F8A79F6AAF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A31E1C54-270D-466B-BB60-F8A79F6AAF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A31E1C54-270D-466B-BB60-F8A79F6AAF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56DAEDC-6B91-4283-AB30-7B25D3CBE04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56DAEDC-6B91-4283-AB30-7B25D3CBE04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56DAEDC-6B91-4283-AB30-7B25D3CBE04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56DAEDC-6B91-4283-AB30-7B25D3CBE04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543B9A99-A5F5-439A-A41C-6D832A5281D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543B9A99-A5F5-439A-A41C-6D832A5281D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543B9A99-A5F5-439A-A41C-6D832A5281D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543B9A99-A5F5-439A-A41C-6D832A5281D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8648E6-E814-4541-9F21-8DD75CD06D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8648E6-E814-4541-9F21-8DD75CD06D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8648E6-E814-4541-9F21-8DD75CD06D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8648E6-E814-4541-9F21-8DD75CD06D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

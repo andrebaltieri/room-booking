@@ -9,13 +9,19 @@ namespace RoomBooking.Core.Models
     {
         private IList<Role> _roles { get; set; }
 
+        protected User()
+        {
+            this._roles = new List<Role>();
+        }
         public User(string name, string email)
         {
+            this.Id = new Guid();
             this.Name = name;
             this.Email = email;
             this._roles = new List<Role>();
         }
 
+        public Guid Id { get; set; }
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
