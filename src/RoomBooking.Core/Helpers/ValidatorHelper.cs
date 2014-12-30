@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace RoomBooking.Core.Helpers
 {
@@ -37,11 +38,35 @@ namespace RoomBooking.Core.Helpers
                 throw new Exception(errorMessage);
         }
 
-        public static void EnsureDayOfWeekIsNotWeekend(DateTime date, string error)
+        public static void EnsureDayOfWeekIsNotWeekend(DateTime date, string errorMessage)
         {
             if (date.DayOfWeek == DayOfWeek.Saturday ||
                 date.DayOfWeek == DayOfWeek.Sunday)
-                throw new Exception(error);
+                throw new Exception(errorMessage);
+        }
+
+        public static void EnrureListDontHaveDate(IList<DateTime> dateList, DateTime date, string errorMessage)
+        {
+            if (dateList != null)
+            {
+                foreach (var item in dateList)
+                {
+                    if (item.Date == date.Date)
+                        throw new Exception(errorMessage);
+                }
+            }
+        }
+
+        public static void EnrureListDontHaveDateAndTime(IList<DateTime> dateList, DateTime date, string errorMessage)
+        {
+            if (dateList != null)
+            {
+                foreach (var item in dateList)
+                {
+                    if (item == date)
+                        throw new Exception(errorMessage);
+                }
+            }
         }
         #endregion
 

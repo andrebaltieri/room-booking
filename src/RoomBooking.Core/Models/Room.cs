@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoomBooking.Core.Enums;
+using System;
 
 namespace RoomBooking.Core.Models
 {
@@ -12,5 +13,11 @@ namespace RoomBooking.Core.Models
 
         public DateTime StartTime { get; private set; }
         public DateTime EndTime { get; private set; }
+        public ERoomStatus Status { get; private set; }
+
+        public void MarkAsInUse()
+        {
+            this.Status = ERoomStatus.InUse;
+        }
     }
 }
