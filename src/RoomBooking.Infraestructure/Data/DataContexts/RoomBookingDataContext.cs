@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RoomBooking.Infraestructure.Data.DataContexts
 {
-    class RoomBookingDataContext
+    public class RoomBookingDataContext : DbContext
     {
     }
 }

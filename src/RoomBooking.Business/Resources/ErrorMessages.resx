@@ -117,37 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BookDateIsWeekend" xml:space="preserve">
-    <value>Não é possível realizar reservas aos finais de semanas.</value>
-  </data>
-  <data name="BookEndTimeMustBeLessThanRoomEndTime" xml:space="preserve">
-    <value>Reserva para as {0} não efetuada. A sala fecha as {1}.</value>
-  </data>
-  <data name="BookHasANullRoom" xml:space="preserve">
-    <value>Sala inválida.</value>
-  </data>
-  <data name="BookHasANullUser" xml:space="preserve">
-    <value>Usuário inválido.</value>
-  </data>
-  <data name="BookStartTimeMustBeGreaterThanRoomStartTime" xml:space="preserve">
-    <value>Reserva para as {0} não efetuada. A sala só abre as {1}.</value>
-  </data>
-  <data name="BookStartTimeMustBeInFuture" xml:space="preserve">
-    <value>Não é possível realizar uma reserva no passado.</value>
-  </data>
-  <data name="BookTimeTotalShouldBeLessThan" xml:space="preserve">
-    <value>A reserva não pode ultrapassar {0} horas.</value>
-  </data>
-  <data name="PasswordNotMatch" xml:space="preserve">
-    <value>As senhas digitadas não coincidem.</value>
-  </data>
-  <data name="UserHasANullRole" xml:space="preserve">
-    <value>Este perfil não é válido.</value>
-  </data>
-  <data name="UserHasANullRoleList" xml:space="preserve">
-    <value>Falha ao determinar a lista de perfis do usuário.</value>
-  </data>
-  <data name="UserNameIsRequired" xml:space="preserve">
-    <value>O nome é requerido.</value>
+  <data name="InvalidEmailOrPassword" xml:space="preserve">
+    <value>Usuário ou senha inválidos.</value>
   </data>
 </root>

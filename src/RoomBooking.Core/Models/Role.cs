@@ -20,7 +20,7 @@ namespace RoomBooking.Core.Models
 
         public Guid Id { get; private set; }
         public string Name { get; private set; }
-        public IEnumerable<User> Users
+        public ICollection<User> Users
         {
             get { return _users; }
             protected set { _users = new List<User>(value); }

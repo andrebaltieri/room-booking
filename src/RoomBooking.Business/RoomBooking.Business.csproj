@@ -40,7 +40,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\BookService.cs" />
+    <Compile Include="Services\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoomBooking.Core\RoomBooking.Core.csproj">
+      <Project>{c71d2755-8756-4d5e-9013-e85c6ac030fe}</Project>
+      <Name>RoomBooking.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoomBooking.Infraestructure\RoomBooking.Infraestructure.csproj">
+      <Project>{a56daedc-6b91-4283-ab30-7b25d3cbe04a}</Project>
+      <Name>RoomBooking.Infraestructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ErrorMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -25,7 +25,7 @@ namespace RoomBooking.Core.Models
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        public IEnumerable<Role> Roles
+        public ICollection<Role> Roles
         {
             get { return _roles; }
             protected set { _roles = new List<Role>(value); }
@@ -44,6 +44,19 @@ namespace RoomBooking.Core.Models
             ValidatorHelper.EnsureIsNotNull(_roles, ErrorMessages.UserHasANullRoleList);
 
             this._roles.Add(role);
+        }
+
+        public string ResetPassword()
+        {
+            string password = Guid.NewGuid().ToString().Substring(0, 8);
+            this.Password = password;
+            return password;
+        }
+
+        public void ChangeName(string name)
+        {
+            ValidatorHelper.EnsureStringIsNotNullOrEmpty(name, ErrorMessages.UserNameIsRequired);
+            this.Name = name;
         }
     }
 }

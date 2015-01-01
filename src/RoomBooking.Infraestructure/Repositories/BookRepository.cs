@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RoomBooking.Core.Interfaces.Repositories;
+using RoomBooking.Core.Models;
 
 namespace RoomBooking.Infraestructure.Repositories
 {
-    class BookRepository
-    {
+    public class BookRepository : IBookRepository
+    {        
+        public IList<Book> GetBooksByDateRange(DateTime startDate, DateTime endDate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

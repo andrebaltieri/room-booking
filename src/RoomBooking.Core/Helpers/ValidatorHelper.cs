@@ -169,5 +169,13 @@ namespace RoomBooking.Core.Helpers
                 throw new Exception(errorMessage);
         }
         #endregion
+
+        #region String
+        public static void EnsureStringIsNotNullOrEmpty(string value, string errorMessage)
+        {
+            if (String.IsNullOrEmpty(value))
+                throw new Exception(errorMessage);
+        }
+        #endregion
     }
 }

@@ -149,5 +149,14 @@ namespace RoomBooking.Core.Resources {
                 return ResourceManager.GetString("UserHasANullRoleList", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O nome é requerido..
+        /// </summary>
+        public static string UserNameIsRequired {
+            get {
+                return ResourceManager.GetString("UserNameIsRequired", resourceCulture);
+            }
+        }
     }
 }
