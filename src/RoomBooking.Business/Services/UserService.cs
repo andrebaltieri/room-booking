@@ -23,20 +23,6 @@ namespace RoomBooking.Business.Services
             this._notificationService = notificationService;
         }
 
-        public User Authenticate(string email, string password)
-        {
-            // Recupera o usuário
-            var user = _userRepository.GetByEmailAndPassword(email, password);
-            if (user == null)
-                throw new Exception(ErrorMessages.InvalidEmailOrPassword);
-
-            // Loga a ação
-            _logService.Log(String.Format("Usuário {0} se conectou.", user.Email));
-
-            // Retorna o resultado
-            return user;
-        }
-
         public void ChangePassword(string currentPassword, string newPassword, string confirmPassword, string email)
         {
             // Tenta recuperar o usuário

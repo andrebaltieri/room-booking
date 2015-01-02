@@ -22,8 +22,8 @@ namespace RoomBooking.Api.Controllers
         }
 
         [HttpPost]
-        [Route("")]
-        public Task<HttpResponseMessage> Post(CreateUserViewModel model)
+        [Route("create")]
+        public Task<HttpResponseMessage> Create(CreateUserViewModel model)
         {
             HttpResponseMessage response = new HttpResponseMessage();
 
@@ -40,7 +40,30 @@ namespace RoomBooking.Api.Controllers
 
             var tsc = new TaskCompletionSource<HttpResponseMessage>();
             tsc.SetResult(response);
-            return tsc.Task;            
+            return tsc.Task;
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [Route("changepassword")]
+        public Task<HttpResponseMessage> ChangePassword(CreateUserViewModel model)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                var result = true;
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+            }
+            catch (Exception ex)
+            {
+                _logService.Log(ex);
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, ErrorMessages.FailedToCreateNewUser);
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
         }
 
         protected override void Dispose(bool disposing)
