@@ -120,4 +120,10 @@
   <data name="FailedToCreateNewUser" xml:space="preserve">
     <value>Failed to create user. Please, try again later.</value>
   </data>
+  <data name="FailedToRetrieveUserInformation" xml:space="preserve">
+    <value>Failed to retrieve user information.</value>
+  </data>
+  <data name="UsernameOrPasswordIsInvalid" xml:space="preserve">
+    <value>Invalid username or password.</value>
+  </data>
 </root>

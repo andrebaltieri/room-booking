@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ErrorMessages.en-US.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>

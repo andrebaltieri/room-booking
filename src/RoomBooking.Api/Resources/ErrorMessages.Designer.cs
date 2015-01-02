@@ -68,5 +68,23 @@ namespace RoomBooking.Api.Resources {
                 return ResourceManager.GetString("FailedToCreateNewUser", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Falha ao obter informações do usuário..
+        /// </summary>
+        public static string FailedToRetrieveUserInformation {
+            get {
+                return ResourceManager.GetString("FailedToRetrieveUserInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usuário ou senha inválidos..
+        /// </summary>
+        public static string UsernameOrPasswordIsInvalid {
+            get {
+                return ResourceManager.GetString("UsernameOrPasswordIsInvalid", resourceCulture);
+            }
+        }
     }
 }

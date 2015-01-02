@@ -14,6 +14,14 @@ namespace RoomBooking.Core.Models
             this.Id = Guid.NewGuid();
             this._roles = new List<Role>();
         }
+        public User(Guid id, string name, string email)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Email = email;
+            this._roles = new List<Role>();
+        }
+
         public User(string name, string email)
         {
             this.Id = Guid.NewGuid();

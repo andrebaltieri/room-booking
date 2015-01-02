@@ -10,6 +10,5 @@ namespace RoomBooking.Core.Interfaces.Services
         string ResetPassword(string email);
         void ChangePassword(string currentPassword, string newPassword, string confirmPassword, string email);
         void UpdateProfile(string name, string email);
-        User Authenticate(string email, string password);
     }
 }

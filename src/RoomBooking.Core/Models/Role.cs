@@ -26,5 +26,10 @@ namespace RoomBooking.Core.Models
             get { return _users; }
             protected set { _users = new List<User>(value); }
         }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }

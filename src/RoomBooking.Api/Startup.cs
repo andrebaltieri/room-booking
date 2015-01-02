@@ -1,9 +1,14 @@
-﻿using Microsoft.Practices.Unity;
+﻿using Microsoft.Owin;
+using Microsoft.Owin.Security.OAuth;
+using Microsoft.Practices.Unity;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
 using RoomBooking.Api.Helpers;
+using RoomBooking.Api.Security;
+using RoomBooking.Business.Services;
 using RoomBooking.Common;
+using System;
 using System.Web.Http;
 
 namespace RoomBooking.Api
@@ -15,6 +20,8 @@ namespace RoomBooking.Api
             HttpConfiguration config = new HttpConfiguration();
 
             ConfigureWebApi(config);
+            ConfigureOAuth(app);            
+
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             app.UseWebApi(config);
         }
@@ -46,6 +53,21 @@ namespace RoomBooking.Api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+        }
+
+        public void ConfigureOAuth(IAppBuilder app)
+        {
+            OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
+            {
+                AllowInsecureHttp = true,
+                TokenEndpointPath = new PathString("/api/security/token"),
+                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
+                Provider = new AuthorizationServerProvider()
+            };
+
+            // Token Generation
+            app.UseOAuthAuthorizationServer(OAuthServerOptions);
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
         }
     }
 }

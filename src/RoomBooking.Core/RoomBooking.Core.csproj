@@ -45,6 +45,7 @@
     <Compile Include="Interfaces\Repositories\IBookRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRoleRepository.cs" />
     <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
+    <Compile Include="Interfaces\Services\IAuthenticationService.cs" />
     <Compile Include="Interfaces\Services\IBookService.cs" />
     <Compile Include="Interfaces\Services\ILogService.cs" />
     <Compile Include="Interfaces\Services\INotificationService.cs" />
