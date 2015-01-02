@@ -30,7 +30,7 @@ namespace RoomBooking.Api.Security
 
                     if (user == null)
                     {
-                        context.SetError("invalid_grant", ErrorMessages.UsernameOrPasswordIsInvalid);
+                        context.SetError("invalid_grant", Messages.UsernameOrPasswordIsInvalid);
                         return;
                     }
 
@@ -54,7 +54,7 @@ namespace RoomBooking.Api.Security
             }
             catch
             {
-                context.SetError("invalid_grant", ErrorMessages.FailedToRetrieveUserInformation);
+                context.SetError("invalid_grant", Messages.FailedToRetrieveUserInformation);
             }
         }
     }

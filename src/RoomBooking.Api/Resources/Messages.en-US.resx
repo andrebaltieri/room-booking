@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangePasswordFail" xml:space="preserve">
+    <value>Your password change could not be completed. Please, try again later.</value>
+  </data>
+  <data name="ChangePasswordSuccess" xml:space="preserve">
+    <value>Password successfully changed.</value>
+  </data>
   <data name="FailedToCreateNewUser" xml:space="preserve">
     <value>Failed to create user. Please, try again later.</value>
   </data>
   <data name="FailedToRetrieveUserInformation" xml:space="preserve">
     <value>Failed to retrieve user information.</value>
+  </data>
+  <data name="ResetPasswordFail" xml:space="preserve">
+    <value>Password not reseted. Please try again later.</value>
+  </data>
+  <data name="ResetPasswordSuccess" xml:space="preserve">
+    <value>Password successfully reseted. Your new password was sent to {0}.</value>
+  </data>
+  <data name="UpdateProfileFail" xml:space="preserve">
+    <value>Failed to update profile. Please, try again later.</value>
+  </data>
+  <data name="UpdateProfileSuccess" xml:space="preserve">
+    <value>Profile successfully updated.</value>
   </data>
   <data name="UsernameOrPasswordIsInvalid" xml:space="preserve">
     <value>Invalid username or password.</value>

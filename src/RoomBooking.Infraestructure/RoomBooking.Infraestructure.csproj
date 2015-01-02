@@ -52,6 +52,11 @@
     <Compile Include="Data\Mappings\RoomMap.cs" />
     <Compile Include="Data\Mappings\UserMap.cs" />
     <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Migrations\201501022231423_Initial_Version.cs" />
+    <Compile Include="Migrations\201501022231423_Initial_Version.Designer.cs">
+      <DependentUpon>201501022231423_Initial_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BookRepository.cs" />
     <Compile Include="Repositories\RoleRepository.cs" />
@@ -68,6 +73,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201501022231423_Initial_Version.resx">
+      <DependentUpon>201501022231423_Initial_Version.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

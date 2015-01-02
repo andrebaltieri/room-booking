@@ -22,8 +22,8 @@ namespace RoomBooking.Api.Controllers
         }
 
         [HttpPost]
-        [Route("create")]
-        public Task<HttpResponseMessage> Create(CreateUserViewModel model)
+        [Route("register")]
+        public Task<HttpResponseMessage> Register(CreateUserViewModel model)
         {
             HttpResponseMessage response = new HttpResponseMessage();
 
@@ -35,7 +35,7 @@ namespace RoomBooking.Api.Controllers
             catch (Exception ex)
             {
                 _logService.Log(ex);
-                response = Request.CreateResponse(HttpStatusCode.BadRequest, ErrorMessages.FailedToCreateNewUser);
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, Messages.FailedToCreateNewUser);
             }
 
             var tsc = new TaskCompletionSource<HttpResponseMessage>();
@@ -44,21 +44,66 @@ namespace RoomBooking.Api.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         [Route("changepassword")]
-        public Task<HttpResponseMessage> ChangePassword(CreateUserViewModel model)
+        public Task<HttpResponseMessage> ChangePassword(ChangePasswordViewModel model)
         {
             HttpResponseMessage response = new HttpResponseMessage();
 
             try
             {
-                var result = true;
-                response = Request.CreateResponse(HttpStatusCode.OK, result);
+                _service.ChangePassword(model.CurrentPassword, model.NewPassword, model.ConfirmPassword, User.Identity.Name);
+                response = Request.CreateResponse(HttpStatusCode.OK, Messages.ChangePasswordSuccess);
             }
             catch (Exception ex)
             {
                 _logService.Log(ex);
-                response = Request.CreateResponse(HttpStatusCode.BadRequest, ErrorMessages.FailedToCreateNewUser);
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, Messages.ChangePasswordFail);
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
+        }
+
+        [HttpPost]
+        [Route("resetpassword")]
+        public Task<HttpResponseMessage> ResetPassword(ResetPasswordViewModel model)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                _service.ResetPassword(model.Email);
+                response = Request.CreateResponse(HttpStatusCode.OK, String.Format(Messages.ResetPasswordSuccess, model.Email));
+            }
+            catch (Exception ex)
+            {
+                _logService.Log(ex);
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, Messages.ResetPasswordFail);
+            }
+
+            var tsc = new TaskCompletionSource<HttpResponseMessage>();
+            tsc.SetResult(response);
+            return tsc.Task;
+        }
+
+        [HttpPost]
+        [Authorize]
+        [Route("update")]
+        public Task<HttpResponseMessage> Update(UpdateProfileViewModel model)
+        {
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            try
+            {
+                _service.UpdateProfile(model.Name, User.Identity.Name);
+                response = Request.CreateResponse(HttpStatusCode.OK, Messages.UpdateProfileSuccess);
+            }
+            catch (Exception ex)
+            {
+                _logService.Log(ex);
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, Messages.UpdateProfileFail);
             }
 
             var tsc = new TaskCompletionSource<HttpResponseMessage>();

@@ -1,4 +1,5 @@
-﻿using RoomBooking.Core.Interfaces.Services;
+﻿using RoomBooking.Business.Security;
+using RoomBooking.Core.Interfaces.Services;
 using RoomBooking.Core.Models;
 using System.Data.SqlClient;
 
@@ -16,10 +17,13 @@ namespace RoomBooking.Business.Services
 
         public User Authenticate(string email, string password)
         {
+            // Encrypta a senha
+            var pass = EncryptHelper.Encrypt(password);
+
             _conn.Open();
             SqlCommand selectUserCommand = new SqlCommand("select top 1 [Id], [Name], [Email] from [User] u where u.[Email] = @Email AND u.[Password] = @Password", _conn);
             selectUserCommand.Parameters.AddWithValue("@Email", email);
-            selectUserCommand.Parameters.AddWithValue("@Password", password);
+            selectUserCommand.Parameters.AddWithValue("@Password", pass);
 
             SqlDataReader reader = selectUserCommand.ExecuteReader();
             reader.Read();

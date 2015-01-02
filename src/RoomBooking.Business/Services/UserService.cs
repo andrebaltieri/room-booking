@@ -1,10 +1,11 @@
 ﻿using RoomBooking.Business.Resources;
+using RoomBooking.Business.Security;
 using RoomBooking.Core.Interfaces.Repositories;
 using RoomBooking.Core.Interfaces.Services;
 using RoomBooking.Core.Models;
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RoomBooking.Business.Services
 {
@@ -26,12 +27,12 @@ namespace RoomBooking.Business.Services
         public void ChangePassword(string currentPassword, string newPassword, string confirmPassword, string email)
         {
             // Tenta recuperar o usuário
-            var user = _userRepository.GetByEmailAndPassword(email, currentPassword);
+            var user = _userRepository.GetByEmailAndPassword(email, EncryptHelper.Encrypt(currentPassword));
             if (user == null)
                 throw new Exception(ErrorMessages.InvalidEmailOrPassword);
 
             // Tenta alterar a senha
-            user.SetPassword(newPassword, confirmPassword);
+            user.SetPassword(EncryptHelper.Encrypt(newPassword), EncryptHelper.Encrypt(confirmPassword));
 
             // Persiste as mudanças
             _userRepository.Update(user);
@@ -55,7 +56,7 @@ namespace RoomBooking.Business.Services
             }
 
             // Atribui a senha
-            user.SetPassword(password, confirmPassword);
+            user.SetPassword(EncryptHelper.Encrypt(password), EncryptHelper.Encrypt(confirmPassword));
 
             // Persiste as informações
             _userRepository.Create(user);
@@ -75,6 +76,12 @@ namespace RoomBooking.Business.Services
 
             // Tenta resetar a senha
             string password = user.ResetPassword();
+
+            // Envia por E-mail a senha
+            _notificationService.SendNotification(user.Name, user.Email);
+
+            // Encripta a senha
+            user.SetPassword(EncryptHelper.Encrypt(password), EncryptHelper.Encrypt(password));
 
             // Persiste as mudanças
             _userRepository.Update(user);

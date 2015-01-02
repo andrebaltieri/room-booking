@@ -51,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ErrorMessages.en-US.resx</DependentUpon>
     </Compile>
+    <Compile Include="Security\EncryptHelper.cs" />
     <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\UserService.cs" />

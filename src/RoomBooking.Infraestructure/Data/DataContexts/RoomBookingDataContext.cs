@@ -11,8 +11,6 @@ namespace RoomBooking.Infraestructure.Data.DataContexts
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
-
-            Database.SetInitializer<RoomBookingDataContext>(new RoomBookingDataContextInitializer());
         }
 
         public DbSet<Room> Rooms { get; set; }
@@ -26,16 +24,6 @@ namespace RoomBooking.Infraestructure.Data.DataContexts
             modelBuilder.Configurations.Add(new RoomMap());
             modelBuilder.Configurations.Add(new UserMap());
             modelBuilder.Configurations.Add(new RoleMap());
-        }
-    }
-
-    public class RoomBookingDataContextInitializer : DropCreateDatabaseAlways<RoomBookingDataContext>
-    {
-        protected override void Seed(RoomBookingDataContext context)
-        {
-            context.Roles.Add(new Role("Admin"));
-            context.Roles.Add(new Role("User"));
-            context.SaveChanges();
         }
     }
 }
