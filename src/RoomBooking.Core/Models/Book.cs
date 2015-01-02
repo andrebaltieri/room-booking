@@ -8,7 +8,10 @@ namespace RoomBooking.Core.Models
 {
     public class Book
     {
-        protected Book() { }
+        protected Book()
+        {
+            this.Id = Guid.NewGuid();
+        }
         public Book(Room room, DateTime startTime, DateTime endDate, User user)
         {
             ValidatorHelper.EnsureIsNotNull(room, ErrorMessages.BookHasANullRoom);
@@ -19,7 +22,7 @@ namespace RoomBooking.Core.Models
             ValidatorHelper.EnsureTimeIsLessOrEqualThan(endDate, room.EndTime, String.Format(ErrorMessages.BookEndTimeMustBeLessThanRoomEndTime, startTime, room.EndTime));
             ValidatorHelper.EnsureDayOfWeekIsNotWeekend(startTime, ErrorMessages.BookDateIsWeekend);
 
-            this.Id = new Guid();
+            this.Id = Guid.NewGuid();
             this.Room = room;
             this.Status = EBookStatus.InProgress;
             this.StartTime = startTime;

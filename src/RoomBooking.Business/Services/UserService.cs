@@ -3,19 +3,22 @@ using RoomBooking.Core.Interfaces.Repositories;
 using RoomBooking.Core.Interfaces.Services;
 using RoomBooking.Core.Models;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace RoomBooking.Business.Services
 {
     public class UserService : IUserService
     {
-        private IUserRepository _repository;
+        private IUserRepository _userRepository;
+        private IRoleRepository _roleRepository;
         private ILogService _logService;
         private INotificationService _notificationService;
 
-        public UserService(IUserRepository repository, ILogService logService, INotificationService notificationService)
+        public UserService(IUserRepository userRepository, IRoleRepository roleRepository, ILogService logService, INotificationService notificationService)
         {
-            this._repository = repository;
+            this._userRepository = userRepository;
+            this._roleRepository = roleRepository;
             this._logService = logService;
             this._notificationService = notificationService;
         }
@@ -23,7 +26,7 @@ namespace RoomBooking.Business.Services
         public User Authenticate(string email, string password)
         {
             // Recupera o usuário
-            var user = _repository.GetByEmailAndPassword(email, password);
+            var user = _userRepository.GetByEmailAndPassword(email, password);
             if (user == null)
                 throw new Exception(ErrorMessages.InvalidEmailOrPassword);
 
@@ -37,40 +40,50 @@ namespace RoomBooking.Business.Services
         public void ChangePassword(string currentPassword, string newPassword, string confirmPassword, string email)
         {
             // Tenta recuperar o usuário
-            var user = _repository.GetByEmailAndPassword(email, currentPassword);
+            var user = _userRepository.GetByEmailAndPassword(email, currentPassword);
             if (user == null)
                 throw new Exception(ErrorMessages.InvalidEmailOrPassword);
 
             // Tenta alterar a senha
-            user.SetPassword(newPassword, confirmPassword);            
+            user.SetPassword(newPassword, confirmPassword);
 
             // Persiste as mudanças
-            _repository.Update(user);
+            _userRepository.Update(user);
 
             // Loga a ação
             _logService.Log(String.Format("Usuário {0} alterou sua senha.", email));
         }
 
-        public void CreateNewUser(string name, string email, IList<string> roles)
+        public User Register(string name, string email, string password, string confirmPassword, IList<string> roles)
         {
-            // Cria uma nova ação
+            // Cria um novo usuário
             var user = new User(name, email);
+
+            // Recupera os roles
+            var rolesFromDatabase = _roleRepository.GetAll();
 
             // Atribui os roles
             foreach (var role in roles)
-                user.AddRole(new Role(role));
+            {
+                user.AddRole(rolesFromDatabase.Where(x => x.Name.ToLower() == role.ToLower()).FirstOrDefault());
+            }
+
+            // Atribui a senha
+            user.SetPassword(password, confirmPassword);
 
             // Persiste as informações
-            _repository.Create(user);
+            _userRepository.Create(user);
 
             // Loga a ação
             _logService.Log(String.Format("Usuário {0} criado.", email));
+
+            return user;
         }
 
         public string ResetPassword(string email)
         {
             // Tenta recuperar o usuário
-            var user = _repository.GetByEmail(email);
+            var user = _userRepository.GetByEmail(email);
             if (user == null)
                 throw new Exception(ErrorMessages.InvalidEmailOrPassword);
 
@@ -78,7 +91,7 @@ namespace RoomBooking.Business.Services
             string password = user.ResetPassword();
 
             // Persiste as mudanças
-            _repository.Update(user);
+            _userRepository.Update(user);
 
             // Loga a ação
             _logService.Log(String.Format("Usuário {0} alterou sua senha.", email));
@@ -89,7 +102,7 @@ namespace RoomBooking.Business.Services
         public void UpdateProfile(string name, string email)
         {
             // Tenta recuperar o usuário
-            var user = _repository.GetByEmail(email);
+            var user = _userRepository.GetByEmail(email);
             if (user == null)
                 throw new Exception(ErrorMessages.InvalidEmailOrPassword);
 
@@ -97,7 +110,7 @@ namespace RoomBooking.Business.Services
             user.ChangeName(name);
 
             // Persiste as mudanças
-            _repository.Update(user);
+            _userRepository.Update(user);
 
             // Loga a ação
             _logService.Log(String.Format("Usuário {0} alterou sua senha.", email));
@@ -105,7 +118,7 @@ namespace RoomBooking.Business.Services
 
         public void Dispose()
         {
-            _repository.Dispose();
+            _userRepository.Dispose();
         }
     }
 }

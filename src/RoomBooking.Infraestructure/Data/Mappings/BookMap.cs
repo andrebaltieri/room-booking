@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RoomBooking.Core.Models;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 
 namespace RoomBooking.Infraestructure.Data.Mappings
 {
-    class BookMap
+    public class BookMap : EntityTypeConfiguration<Book>
     {
+        public BookMap()
+        {
+            ToTable("Book");
+
+            Property(x => x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+            HasRequired(x => x.User);
+            HasRequired(x => x.Room);
+        }
+    
     }
 }

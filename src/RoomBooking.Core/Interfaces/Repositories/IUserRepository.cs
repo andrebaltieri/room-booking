@@ -9,6 +9,6 @@ namespace RoomBooking.Core.Interfaces.Repositories
         User GetByEmailAndPassword(string email, string password);
         User GetById(Guid id);
         void Create(User user);
-        void Update(User user);
+        void Update(User user);        
     }
 }

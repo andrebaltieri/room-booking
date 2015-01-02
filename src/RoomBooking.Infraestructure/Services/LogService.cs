@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RoomBooking.Core.Interfaces.Services;
+using System;
 
 namespace RoomBooking.Infraestructure.Services
 {
-    class LogService
+    public class LogService : ILogService
     {
+        public void Log(Exception ex)
+        {
+            
+        }
+
+        public void Log(string message)
+        {
+            
+        }
+
+        public void Dispose()
+        {
+            
+        }
     }
 }

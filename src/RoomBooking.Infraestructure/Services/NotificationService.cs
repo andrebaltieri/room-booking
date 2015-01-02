@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RoomBooking.Core.Interfaces.Services;
 
 namespace RoomBooking.Infraestructure.Services
 {
-    class NotificationService
-    {
+    public class NotificationService : INotificationService
+    {        
+        public void SendNotification(string name, string email)
+        {
+            
+        }
+
+        public void Dispose()
+        {
+            
+        }
     }
 }

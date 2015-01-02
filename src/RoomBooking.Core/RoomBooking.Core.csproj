@@ -43,6 +43,7 @@
     <Compile Include="Enums\ERoomStatus.cs" />
     <Compile Include="Helpers\ValidatorHelper.cs" />
     <Compile Include="Interfaces\Repositories\IBookRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRoleRepository.cs" />
     <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
     <Compile Include="Interfaces\Services\IBookService.cs" />
     <Compile Include="Interfaces\Services\ILogService.cs" />

@@ -11,11 +11,12 @@ namespace RoomBooking.Core.Models
 
         protected User()
         {
+            this.Id = Guid.NewGuid();
             this._roles = new List<Role>();
         }
         public User(string name, string email)
         {
-            this.Id = new Guid();
+            this.Id = Guid.NewGuid();
             this.Name = name;
             this.Email = email;
             this._roles = new List<Role>();

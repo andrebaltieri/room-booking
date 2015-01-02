@@ -45,6 +45,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ErrorMessages.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ErrorMessages.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.en-US.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
@@ -59,6 +64,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\ErrorMessages.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ErrorMessages.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>

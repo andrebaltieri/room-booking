@@ -4,14 +4,14 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace RoomBooking.Infraestructure.Data.Mappings
 {
-    public class RoomMap : EntityTypeConfiguration<Room>
+    public class RoleMap : EntityTypeConfiguration<Role>
     {
-        public RoomMap()
+        public RoleMap()
         {
-            ToTable("Room");
+            ToTable("Role");
 
             Property(x => x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(x => x.Title).HasMaxLength(60).IsRequired();
+            Property(x => x.Name).HasMaxLength(60).IsRequired();
         }
     }
 }

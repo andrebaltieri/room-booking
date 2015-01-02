@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RoomBooking.Infraestructure.Helpers
+﻿namespace RoomBooking.Infraestructure.Helpers
 {
-    public class EmailHelper
+    public static class EmailHelper
     {
+        public static void Send()
+        {
+
+        }
     }
 }

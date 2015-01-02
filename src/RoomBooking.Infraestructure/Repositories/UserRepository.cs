@@ -1,11 +1,9 @@
 ﻿using RoomBooking.Core.Interfaces.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RoomBooking.Core.Models;
 using RoomBooking.Infraestructure.Data.DataContexts;
+using System;
+using System.Data.Entity;
+using System.Linq;
 
 namespace RoomBooking.Infraestructure.Repositories
 {
@@ -20,27 +18,29 @@ namespace RoomBooking.Infraestructure.Repositories
 
         public void Create(User user)
         {
-            throw new NotImplementedException();
+            _db.Users.Add(user);
+            _db.SaveChanges();
         }
 
         public User GetByEmail(string email)
         {
-            throw new NotImplementedException();
+            return _db.Users.Include("Roles").Where(x => x.Email.ToLower() == email.ToLower()).FirstOrDefault();
         }
 
         public User GetByEmailAndPassword(string email, string password)
         {
-            throw new NotImplementedException();
+            return _db.Users.Include("Roles").Where(x => x.Email.ToLower() == email.ToLower() && x.Password == password).FirstOrDefault();
         }
 
         public User GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return _db.Users.Include("Roles").Where(x => x.Id == id).FirstOrDefault();
         }
 
         public void Update(User user)
         {
-            throw new NotImplementedException();
+            _db.Entry<User>(user).State = EntityState.Modified;
+            _db.SaveChanges();
         }
 
         public void Dispose()
