@@ -13,8 +13,10 @@ module.exports = function (grunt) {
             sitecss: {
                 files: {
                     'wwwroot/assets/css/styles-bundle.min.css': [
-                        'bower_components/font-awesome/font-awesome.css',
                         'bower_components/bootswatch/paper/bootstrap.css'
+                    ],
+                    'wwwroot/assets/fonts/font-awesome/css/font-awesome.min.css': [
+                        'bower_components/font-awesome/css/font-awesome.css'
                     ]
                 }
             }
@@ -29,7 +31,7 @@ module.exports = function (grunt) {
                     'bower_components/angular-route/angular-route.js',
                     'bower_components/angular-cookie/angular-cookie.js',
                     'bower_components/angular-animate/angular-animate.js',
-                    'bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
+                    'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
                 ],
                 dest: 'wwwroot/assets/libs/scripts-bundle.min.js'
             }
@@ -39,9 +41,11 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['bower_components/font-awesome/fonts/*'],
-                        dest: 'wwwroot/assets/fonts',
-                        filter: 'isFile'
+                        cwd: 'bower_components/font-awesome/fonts/',
+                        src: '**',
+                        dest: 'wwwroot/assets/fonts/font-awesome/fonts',
+                        flatten: true,
+                        filter: 'isFile',
                     }
                 ]
             }
