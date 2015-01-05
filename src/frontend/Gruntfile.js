@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                     'bower_components/angular-route/angular-route.js',
                     'bower_components/angular-cookie/angular-cookie.js',
                     'bower_components/angular-animate/angular-animate.js',
-                    'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+                    'bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
                 ],
                 dest: 'wwwroot/assets/libs/scripts-bundle.min.js'
             }
@@ -37,7 +37,12 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'wwwroot/assets/fonts', filter: 'isFile'}
+                    {
+                        expand: true,
+                        src: ['bower_components/font-awesome/fonts/*'],
+                        dest: 'wwwroot/assets/fonts',
+                        filter: 'isFile'
+                    }
                 ]
             }
         }
