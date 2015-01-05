@@ -7,11 +7,20 @@
 </head>
 <body>
 
+    <head-bar></head-bar>
     <div ng-view></div>
 
     <script src="assets/libs/scripts-bundle.min.js"></script>
+
+    <!-- Config -->
     <script src="app/app.modules.js"></script>
     <script src="app/app.routes.js"></script>
-    <script src="app/account/register/RegisterCtrl.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/shared/headbar/headbar.controller.js"></script>
+    <script src="app/account/register/register.controller.js"></script>
+
+    <!-- Directives -->
+    <script src="app/shared/headbar/headbar.directive.js"></script>
 </body>
 </html>

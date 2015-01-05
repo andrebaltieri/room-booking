@@ -3,7 +3,8 @@
     angular.module('room.booking').config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                controller: 'RegisterCtrl',
+                controller: 'RegisterController',
+                controllerAs: 'register',
                 templateUrl: 'app/account/register/register.html'
             });
     });

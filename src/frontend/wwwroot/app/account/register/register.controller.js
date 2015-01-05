@@ -1,11 +1,12 @@
-﻿(function () {
+(function () {
     'use strict';
-    angular.module('room.booking').controller('RegisterCtrl', RegisterCtrl);
+    angular.module('room.booking').controller('RegisterController', RegisterCtrl);
+
     RegisterCtrl.$inject = ['$location'];
 
     function RegisterCtrl($location) {
-        var vm = this;
-        vm.title = 'HomeCtrl';
+        var register = this;
+        register.title = 'Registre-se';
 
         activate();
 
