@@ -13,10 +13,14 @@ module.exports = function (grunt) {
             sitecss: {
                 files: {
                     'wwwroot/assets/css/styles-bundle.min.css': [
+                        'custom_components/css/styles.css',
                         'bower_components/bootswatch/paper/bootstrap.css'
                     ],
                     'wwwroot/assets/fonts/font-awesome/css/font-awesome.min.css': [
                         'bower_components/font-awesome/css/font-awesome.css'
+                    ],
+                    'wwwroot/assets/css/account.min.css': [
+                        'custom_components/css/account.css'
                     ]
                 }
             }
