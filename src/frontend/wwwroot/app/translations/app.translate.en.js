@@ -11,7 +11,10 @@
                 INPUT_YOUR_NAME: 'Input your Name',
                 INPUT_YOUR_EMAIL: 'Input your E-mail',
                 INPUT_YOUR_PASSWORD: 'Input your Password',
-                CONTINUE: 'Continue'
+                CONTINUE: 'Continue',
+                LANGUAGE: 'Language',
+                PORTUGUESE: 'Portuguese',
+                ENGLISH: 'English'
             });
         });
 })();

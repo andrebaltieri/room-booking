@@ -11,7 +11,10 @@
                 INPUT_YOUR_NAME: 'Digite seu nome',
                 INPUT_YOUR_EMAIL: 'Digite seu E-mail',
                 INPUT_YOUR_PASSWORD: 'Digite sua senha',
-                CONTINUE: 'Continuar'
+                CONTINUE: 'Continuar',
+                LANGUAGE: 'Idioma',
+                PORTUGUESE: 'Portugês',
+                ENGLISH: 'Inglês'
             });
         });
 })();

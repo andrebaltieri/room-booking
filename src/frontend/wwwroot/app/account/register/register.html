@@ -1,21 +1,29 @@
 <link rel="stylesheet" href="assets/css/account.min.css" />
 
 <div ng-controller="RegisterController as register">
-
     <div class="col-md-12 rb-account-header">
+        <div class="dropdown pull-right">
+            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                <span translate="LANGUAGE">Language</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:void(0);" translate="PORTUGUESE" ng-click="register.changeLanguage('pt')">Portuguese</a>
+                </li>
+                <li><a href="javascript:void(0);" translate="ENGLISH" ng-click="register.changeLanguage('en')">English</a>
+                </li>
+            </ul>
+        </div>
         <div class="col-md-6 col-md-offset-3">
             <div class="col-md-5 text-right">
                 <h1><i class="fa fa-bookmark fa-2x"></i></h1>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 col-sm">
                 <h1 class="rb-journal-regular">Room Booking</h1>
                 <p translate="APP_SLOGAN">reserva de salas inteligente&nbsp;&nbsp;&nbsp;</p>
             </div>
         </div>
     </div>
-
-    <button ng-click="register.changeLanguage('en')">English</button>
-    <button ng-click="register.changeLanguage('pt')">Portu</button>
 
     <div class="clearfix"></div>
     <br/>
@@ -47,7 +55,4 @@
             </div>
         </div>
     </form>
-    <p class="text-center">
-        <small>{{ register.info }}</small>
-    </p>
 </div>
