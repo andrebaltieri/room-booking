@@ -42,6 +42,7 @@
     <Compile Include="Enums\EBookStatus.cs" />
     <Compile Include="Enums\ERoomStatus.cs" />
     <Compile Include="Helpers\ValidatorHelper.cs" />
+    <Compile Include="Interfaces\Repositories\IAuthenticationRepository.cs" />
     <Compile Include="Interfaces\Repositories\IBookRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRoleRepository.cs" />
     <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
