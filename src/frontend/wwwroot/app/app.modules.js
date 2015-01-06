@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
-    angular.module('room.booking', ['ui.bootstrap', 'ngRoute']);
+    angular.module('room.booking', ['ui.bootstrap', 'ngRoute', 'pascalprecht.translate']);
 })();

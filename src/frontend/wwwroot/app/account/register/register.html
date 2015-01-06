@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="assets/css/account.min.css"/>
+<link rel="stylesheet" href="assets/css/account.min.css" />
 
 <div ng-controller="RegisterController as register">
 
@@ -9,38 +9,45 @@
             </div>
             <div class="col-md-7">
                 <h1 class="rb-journal-regular">Room Booking</h1>
-
-                <p>reserva de salas inteligente&nbsp;&nbsp;&nbsp;</p>
+                <p translate="APP_SLOGAN">reserva de salas inteligente&nbsp;&nbsp;&nbsp;</p>
             </div>
         </div>
     </div>
 
+    <button ng-click="register.changeLanguage('en')">English</button>
+    <button ng-click="register.changeLanguage('pt')">Portu</button>
+
     <div class="clearfix"></div>
-    <br/><br/>
+    <br/>
+    <br/>
 
     <form>
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-primary">
-                <div class="panel-heading"><h3 class="text-center rb-journal-regular">registre-se</h3></div>
+                <div class="panel-heading">
+                    <h3 class="text-center rb-journal-regular" translate="REGISTER">registre-se</h3>
+                </div>
                 <div class="panel-body">
-
                     <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                        <label for="name" translate="NAME">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="{{ 'INPUT_YOUR_NAME' | translate }}">
                     </div>
                     <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Digite seu E-mail">
+                        <label for="email" translate="EMAIL">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="{{ 'INPUT_YOUR_EMAIL' | translate }}">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Digite sua Senha">
+                        <label for="password" translate="PASSWORD">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="{{ 'INPUT_YOUR_PASSWORD' | translate }}">
                     </div>
                 </div>
                 <div class="panel-footer text-right">
-                    <a class="btn btn-primary" href="#">Cadastrar</a>
+                    <a class="btn btn-primary" href="#" translate="CONTINUE">Cadastrar</a>
                 </div>
             </div>
         </div>
     </form>
+    <p class="text-center">
+        <small>{{ register.info }}</small>
+    </p>
 </div>

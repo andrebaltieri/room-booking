@@ -32,6 +32,7 @@ module.exports = function (grunt) {
             applib: {
                 src: [
                     'bower_components/angular/angular.js',
+                    'bower_components/angular-translate/angular-translate.js',
                     'bower_components/angular-route/angular-route.js',
                     'bower_components/angular-cookie/angular-cookie.js',
                     'bower_components/angular-animate/angular-animate.js',
