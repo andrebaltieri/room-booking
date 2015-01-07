@@ -11,9 +11,5 @@
         activate();
 
         function activate() {}
-
-        register.changeLanguage = function (key) {
-            $translate.use(key);
-        };
     }
 })();
