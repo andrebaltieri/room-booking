@@ -1,12 +1,11 @@
 <link rel="stylesheet" href="assets/css/account.min.css" />
 
-<style type="text/css">
-    .css-form input.ng-invalid.ng-touched {
-        background-color: #FA787E;
+<style>
+    .fieldValid {
+        border: 1px solid #00ff00;
     }
-
-    .css-form input.ng-valid.ng-touched {
-        background-color: #78FA89;
+    .fieldInvalid {
+        border: 1px solid #ff0000;
     }
 </style>
 
@@ -17,7 +16,7 @@
     <br/>
     <br/>
 
-    <form novalidate>
+    <form name="registerForm" ng-submit="register.submit()" novalidate>
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -26,7 +25,14 @@
                 <div class="panel-body">
                     <div class="form-group">
                         <label for="name" translate="NAME">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="{{ 'INPUT_YOUR_NAME' | translate }}" required/>
+                        <input
+                                ng-model="register.user.name"
+                                ng-minlength="5"
+                                ng-maxlength="60"
+                                type="text"
+                                class="form-control"
+                                id="name" placeholder="{{ 'INPUT_YOUR_NAME' | translate }}"
+                                required/>
                     </div>
                     <div class="form-group">
                         <label for="email" translate="EMAIL">E-mail</label>
@@ -36,11 +42,19 @@
                         <label for="password" translate="PASSWORD">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="{{ 'INPUT_YOUR_PASSWORD' | translate }}" required/>
                     </div>
+                    <div class="form-group">
+                        <label for="password" translate="CONFIRM_PASSWORD">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmpassword" placeholder="{{ 'INPUT_YOUR_CONFIRM_PASSWORD' | translate }}" required/>
+                    </div>
                 </div>
                 <div class="panel-footer text-right">
                     <input type="submit" class="btn btn-primary" translate="CONTINUE" />
                 </div>
             </div>
+        </div>
+
+        <div ng-show="registerForm.name.$invalid">
+            You must enter a valid name.
         </div>
     </form>
 </div>

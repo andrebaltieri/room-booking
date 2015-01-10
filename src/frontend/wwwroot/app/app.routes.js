@@ -5,7 +5,7 @@
             .when('/', {
                 controller: 'RegisterController',
                 controllerAs: 'register',
-                templateUrl: 'app/account/register/register.html'
+                templateUrl: 'app/components/account/register/register.html'
             });
     });
 })();
