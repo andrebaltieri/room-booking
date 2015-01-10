@@ -16,7 +16,8 @@
                 CONTINUE: 'Continuar',
                 LANGUAGE: 'Idioma',
                 PORTUGUESE: 'Portugês',
-                ENGLISH: 'Inglês'
+                ENGLISH: 'Inglês',
+                USER_INVALID_NAME: 'Nome inválido.'
             });
         });
 })();

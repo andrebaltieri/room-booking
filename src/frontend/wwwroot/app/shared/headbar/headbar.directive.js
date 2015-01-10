@@ -7,7 +7,7 @@
 
     function HeadBar() {
         var directive = {
-            templateUrl: 'app/shared/headbar/headbar-view.html',
+            templateUrl: 'app/shared/headbar/headbar.view.html',
             restrict: 'E'
         };
         return directive;

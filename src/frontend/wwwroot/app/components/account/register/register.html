@@ -23,17 +23,8 @@
                     <h3 class="text-center rb-journal-regular" translate="REGISTER">registre-se</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="form-group">
-                        <label for="name" translate="NAME">Nome</label>
-                        <input
-                                ng-model="register.user.name"
-                                ng-minlength="5"
-                                ng-maxlength="60"
-                                type="text"
-                                class="form-control"
-                                id="name" placeholder="{{ 'INPUT_YOUR_NAME' | translate }}"
-                                required/>
-                    </div>
+                    <input-name id="name" form="registerForm" model="register.user.name"></input-name>
+
                     <div class="form-group">
                         <label for="email" translate="EMAIL">E-mail</label>
                         <input type="email" class="form-control" id="email" placeholder="{{ 'INPUT_YOUR_EMAIL' | translate }}" required/>
@@ -48,13 +39,9 @@
                     </div>
                 </div>
                 <div class="panel-footer text-right">
-                    <input type="submit" class="btn btn-primary" translate="CONTINUE" />
+                    <input type="submit" class="btn btn-primary" value="{{ 'CONTINUE' | translate }}" />
                 </div>
             </div>
-        </div>
-
-        <div ng-show="registerForm.name.$invalid">
-            You must enter a valid name.
         </div>
     </form>
 </div>

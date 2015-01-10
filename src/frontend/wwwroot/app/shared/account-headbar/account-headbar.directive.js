@@ -7,7 +7,7 @@
 
     function AccountHeadBar() {
         var directive = {
-            templateUrl: 'app/shared/account-headbar/account-headbar-view.html',
+            templateUrl: 'app/shared/account-headbar/account-headbar.view.html',
             restrict: 'E'
         };
         return directive;

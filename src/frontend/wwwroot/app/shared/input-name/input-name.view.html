@@ -1,0 +1,26 @@
+<div
+        ng-controller="InputNameController as inputname"
+        class="form-group"
+        ng-class="{ 'has-error' : registerForm.name.$invalid && registerForm.name.$dirty }">
+
+    <label
+            for="{{ id }}"
+            translate="NAME">Nome</label>
+    <input
+            ng-model="model"
+            ng-minlength="5"
+            ng-maxlength="60"
+            type="text"
+            class="form-control"
+            id="{{ id }}"
+            name="{{ id }}"
+            placeholder="{{ 'INPUT_YOUR_NAME' | translate }}"
+            required />
+
+    <div
+            class="alert alert-danger"
+            ng-show="registerForm.name.$invalid && registerForm.name.$dirty">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{ 'USER_INVALID_NAME' | translate }}
+    </div>
+</div>
