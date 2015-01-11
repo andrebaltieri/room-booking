@@ -17,7 +17,8 @@
                 LANGUAGE: 'Idioma',
                 PORTUGUESE: 'Portugês',
                 ENGLISH: 'Inglês',
-                USER_INVALID_NAME: 'Nome inválido.'
+                INVALID_NAME: 'Nome inválido.',
+                INVALID_EMAIL: 'E-mail inválido.'
             });
         });
 })();

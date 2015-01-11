@@ -25,10 +25,8 @@
                 <div class="panel-body">
                     <rb-input-name id="name" ng-model="register.user.name"></rb-input-name>
 
-                    <div class="form-group">
-                        <label for="email" translate="EMAIL">E-mail</label>
-                        <input type="email" ng-model="register.user.email" class="form-control" id="email" placeholder="{{ 'INPUT_YOUR_EMAIL' | translate }}" required/>
-                    </div>
+                    <rb-input-email id="email" ng-model="register.user.email"></rb-input-email>
+
                     <div class="form-group">
                         <label for="password" translate="PASSWORD">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="{{ 'INPUT_YOUR_PASSWORD' | translate }}" required/>

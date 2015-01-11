@@ -3,18 +3,20 @@
 
     angular
         .module('room.booking.directives')
-        .directive('rbInputName', rbInputName);
+        .directive('rbInputEmail', rbInputEmail);
 
-    function rbInputName() {
+    function rbInputEmail() {
         var directive = {
-            templateUrl: 'app/shared/rb-input-name/rb-input-name.view.html',
+            templateUrl: 'app/shared/rb-input-email/rb-input-email.view.html',
             restrict: 'E',
             require: '^form',
             scope: {
                 id: "@id",
                 ngModel: "=ngModel"
             },
-            link: link
+            link: link,
+            controller: 'InputEmailController',
+            controllerAs: 'inputemail'
         };
         return directive;
 
