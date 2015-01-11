@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be85f752-44f8-47a0-b35a-490cf4934231" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.view.html" />
-      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\account-headbar\account-headbar-view.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.view.html" />
-      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\headbar\headbar-view.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.directive.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/translations/app.translate.en.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/translations/app.translate.en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/translations/app.translate.pt.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/translations/app.translate.pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.directive.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.directive.js" />
+      <change type="DELETED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\account-headbar\account-headbar.directive.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\headbar\headbar.directive.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\input-name\input-name.directive.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\account-headbar\account-headbar.controller.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.controller.js" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\account-headbar\account-headbar.view.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.view.html" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\headbar\headbar.controller.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.controller.js" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\headbar\headbar.view.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.view.html" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\input-name\input-name.controller.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.controller.js" />
+      <change type="MOVED" beforePath="C:\dev\room-booking\src\frontend\wwwroot\app\shared\input-name\input-name.view.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/app.modules.js" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/app.modules.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/index.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html" afterPath="$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -40,28 +44,28 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0555553" vertical-offset="151" max-vertical-offset="1404">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="50" />
+            <state vertical-scroll-proportion="-14.807693" vertical-offset="165" max-vertical-offset="1144">
+              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input-name.view.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.view.html">
+      <file leaf-file-name="rb-input-name.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1013986" vertical-offset="0" max-vertical-offset="899">
-              <caret line="3" column="88" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="88" />
+            <state vertical-scroll-proportion="-23.076923" vertical-offset="0" max-vertical-offset="744">
+              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input-name.directive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.directive.js">
+      <file leaf-file-name="rb-input-name.directive.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.7235023" vertical-offset="62" max-vertical-offset="960">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -79,8 +83,6 @@
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/account/register/register.controller.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.controller.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.html" />
-        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.directive.js" />
-        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.directive.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/app.routes.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.controller.js" />
         <option value="$PROJECT_DIR$/src/frontend/custom_components/css/account.css" />
@@ -89,10 +91,22 @@
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/translations/app.translate.pt.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name-view.html" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/index.html" />
-        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.controller.js" />
-        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.view.html" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/app.modules.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/rb-account-headbar.controller.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/rb-headbar.controller.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/rb-headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/rb-account-headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.controller.js" />
         <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/rb-input-name.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.directive.js" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.view.html" />
+        <option value="$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.directive.js" />
       </list>
     </option>
   </component>
@@ -165,6 +179,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,7 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="input-name" />
+              <option name="myItemId" value="rb-input-name" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,44 +325,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="headbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="room-booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="room-booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account-headbar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,7 +408,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,10 +423,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -458,10 +438,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -510,27 +486,49 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1975764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1975764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -557,13 +555,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="884">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="425">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1105">
           <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.view.html">
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
@@ -575,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="459">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1224">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,14 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="527">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3794643" vertical-offset="0" max-vertical-offset="672">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -614,11 +626,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="476">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.view.html">
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
@@ -630,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09030101" vertical-offset="327" max-vertical-offset="1224">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,53 +656,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="812">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/account-headbar/account-headbar.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2006689" vertical-offset="0" max-vertical-offset="897">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3411371" vertical-offset="0" max-vertical-offset="897">
-          <caret line="18" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/headbar/headbar.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22742476" vertical-offset="0" max-vertical-offset="897">
-          <caret line="12" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60505164" vertical-offset="0" max-vertical-offset="871">
+        <state vertical-scroll-proportion="0.60619974" vertical-offset="278" max-vertical-offset="1222">
           <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.controller.js">
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/app.modules.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19397993" vertical-offset="0" max-vertical-offset="897">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.037904125" vertical-offset="0" max-vertical-offset="897">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06911929" vertical-offset="0" max-vertical-offset="897">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037904125" vertical-offset="0" max-vertical-offset="897">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-account-headbar/rb-account-headbar.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="897">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-headbar/rb-headbar.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="897">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17056856" vertical-offset="0" max-vertical-offset="897">
+        <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="897">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
@@ -700,24 +733,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/components/account/register/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0555553" vertical-offset="151" max-vertical-offset="1404">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="50" />
+        <state vertical-scroll-proportion="-14.807693" vertical-offset="165" max-vertical-offset="1144">
+          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.directive.js">
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state vertical-scroll-proportion="-23.076923" vertical-offset="0" max-vertical-offset="744">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/input-name/input-name.view.html">
+    <entry file="file://$PROJECT_DIR$/src/frontend/wwwroot/app/shared/rb-input-name/rb-input-name.directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1013986" vertical-offset="0" max-vertical-offset="899">
-          <caret line="3" column="88" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.7235023" vertical-offset="62" max-vertical-offset="960">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>

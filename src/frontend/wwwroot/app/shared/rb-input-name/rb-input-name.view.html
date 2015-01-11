@@ -1,7 +1,6 @@
 <div
-        ng-controller="InputNameController as inputname"
         class="form-group"
-        ng-class="{ 'has-error' : registerForm.name.$invalid && registerForm.name.$dirty }">
+        ng-class="{ 'has-error' : form.name.$invalid && form.name.$dirty }">
 
     <label
             for="{{ id }}"
@@ -19,7 +18,8 @@
 
     <div
             class="alert alert-danger"
-            ng-show="registerForm.name.$invalid && registerForm.name.$dirty">
+            ng-show="form.name.$invalid && form.name.$dirty">
+
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         {{ 'USER_INVALID_NAME' | translate }}
     </div>

@@ -10,7 +10,7 @@
 </style>
 
 <div ng-controller="RegisterController as register">
-    <account-head-bar></account-head-bar>
+    <rb-account-head-bar></rb-account-head-bar>
 
     <div class="clearfix"></div>
     <br/>
@@ -23,11 +23,11 @@
                     <h3 class="text-center rb-journal-regular" translate="REGISTER">registre-se</h3>
                 </div>
                 <div class="panel-body">
-                    <input-name id="name" form="registerForm" model="register.user.name"></input-name>
+                    <rb-input-name id="name" ng-model="register.user.name"></rb-input-name>
 
                     <div class="form-group">
                         <label for="email" translate="EMAIL">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="{{ 'INPUT_YOUR_EMAIL' | translate }}" required/>
+                        <input type="email" ng-model="register.user.email" class="form-control" id="email" placeholder="{{ 'INPUT_YOUR_EMAIL' | translate }}" required/>
                     </div>
                     <div class="form-group">
                         <label for="password" translate="PASSWORD">Password</label>

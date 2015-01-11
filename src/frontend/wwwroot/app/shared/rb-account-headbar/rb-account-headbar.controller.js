@@ -1,6 +1,7 @@
 (function () {
     'use strict';
-    angular.module('room.booking').controller('AccountHeadBarController', AccountHeadBarController);
+    angular.module('room.booking.directives')
+        .controller('AccountHeadBarController', AccountHeadBarController);
 
     AccountHeadBarController.$inject = ['$location', '$translate'];
 

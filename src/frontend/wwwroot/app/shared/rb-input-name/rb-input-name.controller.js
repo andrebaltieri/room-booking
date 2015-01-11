@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('room.booking').controller('InputNameController', InputNameController);
+    angular.module('room.booking.directives').controller('InputNameController', InputNameController);
 
     InputNameController.$inject = ['$translate'];
 
