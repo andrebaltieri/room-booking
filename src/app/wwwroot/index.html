@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="room.booking">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/journal/css/journal.min.css" />
+    <link rel="stylesheet" href="assets/css/styles-bundle.min.css" />
+</head>
+
+<body>
+
+    <head-bar></head-bar>
+    <div ng-view></div>
+
+    <script src="assets/libs/scripts-bundle.min.js"></script>
+
+    <!-- Config -->
+    <script src="app/app.modules.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.config.js"></script>
+
+    <!-- Translation -->
+    <script src="app/translations/app.translate.en.js"></script>
+    <script src="app/translations/app.translate.pt.js"></script>
+
+
+    <!-- Controllers -->
+    <script src="app/shared/rb-headbar/rb-headbar.controller.js"></script>
+    <script src="app/shared/rb-account-headbar/rb-account-headbar.controller.js"></script>
+    <script src="app/shared/rb-input-email/rb-input-email.controller.js"></script>
+    <script src="app/components/account/register/register.controller.js"></script>
+
+    <!-- Directives -->
+    <script src="app/shared/rb-headbar/rb-headbar.directive.js"></script>
+    <script src="app/shared/rb-account-headbar/rb-account-headbar.directive.js"></script>
+    <script src="app/shared/rb-input-name/rb-input-name.directive.js"></script>
+    <script src="app/shared/rb-input-email/rb-input-email.directive.js"></script>
+
+</body>
+
+</html>

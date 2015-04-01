@@ -1,0 +1,26 @@
+<div
+        class="form-group"
+        ng-class="{ 'has-error' : form.name.$invalid && form.name.$dirty }">
+
+    <label
+            for="{{ id }}"
+            translate="NAME">Nome</label>
+    <input
+            ng-model="ngModel"
+            ng-minlength="5"
+            ng-maxlength="60"
+            type="text"
+            class="form-control"
+            id="{{ id }}"
+            name="{{ id }}"
+            placeholder="{{ 'INPUT_YOUR_NAME' | translate }}"
+            required />
+
+    <div class="alert alert-danger" ng-show="form.name.$dirty && form.name.$invalid">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{ 'INVALID_NAME' | translate }}
+        <small class="error" ng-show="form.name.$error.required">Please input a username</small>
+        <small class="error" ng-show="form.name.$error.minlength">Your username is required to be at least 3 characters</small>
+        <small class="error" ng-show="form.name.$error.maxlength">Your username cannot be longer than 20 characters</small>
+    </div>
+</div>
