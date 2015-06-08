@@ -1,10 +1,12 @@
 ﻿using RoomBooking.Domain.Account.Events.UserEvents;
 using RoomBooking.Domain.Account.Handlers.Contracts;
+using RoomBooking.SharedKernel.Helpers.Contracts;
 using System.Collections.Generic;
+using System;
 
 namespace RoomBooking.ApplicationService.Account.Handlers
 {
-    public class UserRegisteredHandler : IUserRegisteredHandler
+    public class UserRegisteredHandler : IHandler<UserRegistered>
     {
         private List<UserRegistered> _notifications;        
 
@@ -33,5 +35,6 @@ namespace RoomBooking.ApplicationService.Account.Handlers
         {
             this._notifications = new List<UserRegistered>();
         }
+
     }
 }

@@ -2,6 +2,7 @@
 using RoomBooking.ApplicationService.Account.Handlers;
 using RoomBooking.ApplicationService.Account.Services.UserServices;
 using RoomBooking.CrossCutting.Events;
+using RoomBooking.Domain.Account.Events.UserEvents;
 using RoomBooking.Domain.Account.Handlers.Contracts;
 using RoomBooking.Domain.Account.Repositories;
 using RoomBooking.Domain.Account.Services;
@@ -30,7 +31,7 @@ namespace RoomBooking.CrossCutting.Dependency
             container.RegisterType<IUserApplicationService, UserApplicationService>(new HierarchicalLifetimeManager());
 
             container.RegisterType<IHandler<DomainNotification>, DomainNotificationHandler>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserRegisteredHandler, UserRegisteredHandler>();
+            container.RegisterType<IHandler<UserRegistered>, UserRegisteredHandler>();
         }
     }
 }
