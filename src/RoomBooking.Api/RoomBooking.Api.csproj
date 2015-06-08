@@ -152,6 +152,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RoomBooking.ApplicationService\RoomBooking.ApplicationService.csproj">
+      <Project>{9661ee38-f13e-4a63-b245-38069c301dfd}</Project>
+      <Name>RoomBooking.ApplicationService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RoomBooking.CrossCutting\RoomBooking.CrossCutting.csproj">
       <Project>{b9172807-cb13-4861-b1cf-caed15299465}</Project>
       <Name>RoomBooking.CrossCutting</Name>

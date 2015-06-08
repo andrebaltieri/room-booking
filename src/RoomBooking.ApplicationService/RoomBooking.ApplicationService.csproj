@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\Handlers\UserRegisteredHandler.cs" />
+    <Compile Include="Account\Services\ApplicationService.cs" />
     <Compile Include="Account\Services\UserServices\UserApplicationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,19 +9,19 @@ namespace RoomBooking.Api.Controllers
 {
     public class BaseController : ApiController
     {
-        public IHandler<DomainNotification> Notification;
+        public IHandler<DomainNotification> Notifications;
         public HttpResponseMessage ResponseMessage;
 
         public BaseController()
         {
-            this.Notification = DomainEvent.Container.GetService<IHandler<DomainNotification>>();
+            this.Notifications = DomainEvent.Container.GetService<IHandler<DomainNotification>>();
             this.ResponseMessage = new HttpResponseMessage();
         }
 
         public Task<HttpResponseMessage> CreateResponse(HttpStatusCode code, object result)
         {
-            if (Notification.HasNotifications())
-                ResponseMessage = Request.CreateResponse(HttpStatusCode.BadRequest, new { errors = Notification.Notify() });
+            if (Notifications.HasNotifications())
+                ResponseMessage = Request.CreateResponse(HttpStatusCode.BadRequest, new { errors = Notifications.Notify() });
             else
                 ResponseMessage = Request.CreateResponse(HttpStatusCode.OK, result);
 
@@ -32,7 +32,7 @@ namespace RoomBooking.Api.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            Notification.Dispose();
+            Notifications.Dispose();
         }
     }
 }

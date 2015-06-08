@@ -30,7 +30,7 @@ namespace RoomBooking.CrossCutting.Dependency
             container.RegisterType<IUserApplicationService, UserApplicationService>(new HierarchicalLifetimeManager());
 
             container.RegisterType<IHandler<DomainNotification>, DomainNotificationHandler>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserRegisteredHandler, UserRegisteredHandler>(new HierarchicalLifetimeManager());
+            container.RegisterType<IUserRegisteredHandler, UserRegisteredHandler>();
         }
     }
 }

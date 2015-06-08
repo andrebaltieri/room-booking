@@ -1,7 +1,6 @@
 ﻿using RoomBooking.Domain.Account.Events.UserEvents;
 using RoomBooking.Domain.Account.Handlers.Contracts;
 using System.Collections.Generic;
-using System;
 
 namespace RoomBooking.ApplicationService.Account.Handlers
 {
