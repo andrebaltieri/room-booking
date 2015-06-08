@@ -9,8 +9,19 @@ namespace RoomBooking.Domain.Account.Scopes
         {
             return AssertionConcern.IsSatisfiedBy
             (
-                AssertionConcern.AssertNotEmpty(user.Username, "user name is required"),
-                AssertionConcern.AssertNotEmpty(user.Password, "password is required")
+                AssertionConcern.AssertNotEmpty(user.Username, "O usuário é obrigatório"),
+                AssertionConcern.AssertNotEmpty(user.Password, "A senha é obrigatória")
+            );
+        }
+
+        public static bool AuthenticateUserScopeIsValid(this User user, string username, string password)
+        {
+            return AssertionConcern.IsSatisfiedBy
+            (
+                AssertionConcern.AssertNotEmpty(username, "O usuário é obrigatório"),
+                AssertionConcern.AssertNotEmpty(password, "A senha é obrigatória"),
+                AssertionConcern.AssertAreEquals(user.Username, username, "Usuário ou senha inválidos"),
+                AssertionConcern.AssertAreEquals(user.Password, password, "Usuário ou senha inválidos")
             );
         }
     }

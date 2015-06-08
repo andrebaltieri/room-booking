@@ -20,7 +20,7 @@ namespace RoomBooking.Domain.Tests.Account.Specs
         }
 
         [TestMethod]
-        [TestCategory("User Specifications")]
+        [TestCategory("Account/User - Specifications")]
         public void AuthenticateUserSpecShouldReturnOne()
         {
             var query = UserSpecs.AuthenticateUser("andrebaltieri", "andrebaltieri");
@@ -30,7 +30,7 @@ namespace RoomBooking.Domain.Tests.Account.Specs
         }
 
         [TestMethod]
-        [TestCategory("User Specifications")]
+        [TestCategory("Account/User - Specifications")]
         public void AuthenticateUserSpecShouldReturnZero()
         {
             var query = UserSpecs.AuthenticateUser("andrebaltieri222", "andrebaltieri");

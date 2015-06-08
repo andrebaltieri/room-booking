@@ -21,13 +21,10 @@ namespace RoomBooking.Domain.Account.Models
         public bool MustResetPassword { get; private set; }
         public bool IsActive { get; private set; }
 
-        public void Authenticate()
+        public void Authenticate(string username, string password)
         {
-            if (!this.IsActive) { }
-            //this.Assertion.Add("IsActive", "Usuário inativo");
-
-            if (this.MustResetPassword) { }
-            //this.Assertion.Add("MustResetPassword", "Sua senha precisa ser resetada!");
+            if (this.AuthenticateUserScopeIsValid(username, password))
+                return;
         }
 
         public void Register()

@@ -41,7 +41,7 @@ namespace RoomBooking.SharedKernel.Validation
 
         public static DomainNotification AssertNotEmpty(string stringValue, string message)
         {
-            return (stringValue == null || stringValue.Trim().Length == 0) ?
+            return (string.IsNullOrEmpty(stringValue)) ?
                 new DomainNotification("AssertArgumentNotEmpty", message) : null;
         }
 
@@ -55,6 +55,12 @@ namespace RoomBooking.SharedKernel.Validation
         public static DomainNotification AssertTrue(bool boolValue, string message)
         {
             return (!boolValue) ?
+                new DomainNotification("AssertArgumentTrue", message) : null;
+        }
+
+        public static DomainNotification AssertAreEquals(string value, string match, string message)
+        {
+            return (!(value == match)) ?
                 new DomainNotification("AssertArgumentTrue", message) : null;
         }
     }
