@@ -1,4 +1,4 @@
-﻿using RoomBooking.Domain.Account.Entities;
+﻿using RoomBooking.Domain.Account.Models;
 using System;
 using System.Linq.Expressions;
 

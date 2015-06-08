@@ -1,4 +1,4 @@
-﻿using RoomBooking.Domain.Account.Entities;
+﻿using RoomBooking.Domain.Account.Models;
 using RoomBooking.SharedKernel.Validation;
 
 namespace RoomBooking.Domain.Account.Scopes

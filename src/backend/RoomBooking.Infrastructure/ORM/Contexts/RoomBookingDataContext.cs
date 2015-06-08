@@ -1,4 +1,4 @@
-﻿using RoomBooking.Domain.Account.Entities;
+﻿using RoomBooking.Domain.Account.Models;
 using RoomBooking.Infrastructure.ORM.Mapping.Account;
 using System.Data.Entity;
 

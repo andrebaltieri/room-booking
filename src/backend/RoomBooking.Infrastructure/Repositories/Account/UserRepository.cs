@@ -1,4 +1,4 @@
-﻿using RoomBooking.Domain.Account.Entities;
+﻿using RoomBooking.Domain.Account.Models;
 using RoomBooking.Domain.Account.Repositories;
 using RoomBooking.Domain.Account.Specs;
 using RoomBooking.Infrastructure.ORM.Contexts;

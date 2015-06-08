@@ -1,5 +1,5 @@
 ﻿using RoomBooking.Domain.Account.Commands.UserCommands;
-using RoomBooking.Domain.Account.Entities;
+using RoomBooking.Domain.Account.Models;
 using RoomBooking.Domain.Account.Events.UserEvents;
 using RoomBooking.Domain.Account.Repositories;
 using RoomBooking.Domain.Account.Scopes;

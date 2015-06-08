@@ -1,7 +1,7 @@
 ﻿using RoomBooking.Domain.Account.Scopes;
 using System;
 
-namespace RoomBooking.Domain.Account.Entities
+namespace RoomBooking.Domain.Account.Models
 {
     public class User
     {

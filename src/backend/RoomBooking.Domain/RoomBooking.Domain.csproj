@@ -36,7 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\Commands\UserCommands\RegisterUserCommand.cs" />
-    <Compile Include="Account\Entities\User.cs" />
+    <Compile Include="Account\Models\User.cs" />
     <Compile Include="Account\Events\UserEvents\UserRegistered.cs" />
     <Compile Include="Account\Handlers\Contracts\IUserRegisteredHandler.cs" />
     <Compile Include="Account\Repositories\IUserRepository.cs" />

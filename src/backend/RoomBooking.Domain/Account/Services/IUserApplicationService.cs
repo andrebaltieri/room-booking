@@ -1,5 +1,5 @@
 ﻿using RoomBooking.Domain.Account.Commands.UserCommands;
-using RoomBooking.Domain.Account.Entities;
+using RoomBooking.Domain.Account.Models;
 
 namespace RoomBooking.Domain.Account.Services
 {
