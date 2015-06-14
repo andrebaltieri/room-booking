@@ -49,7 +49,6 @@
     <Compile Include="ORM\Mapping\Account\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Account\UserRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Transaction\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

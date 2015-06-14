@@ -6,12 +6,11 @@ using System.Linq;
 
 namespace RoomBooking.Infrastructure.Repositories.Account
 {
-    public class UserRepository : Repository<User>, IUserRepository
+    public class UserRepository : IUserRepository
     {
         private RoomBookingDataContext _context;
 
         public UserRepository(RoomBookingDataContext context)
-            : base(context)
         {
             this._context = context;
         }
