@@ -23,21 +23,9 @@ namespace RoomBooking.ApplicationService.Account.Services
         {
             if (_notifications.HasNotifications())
                 return false;
-            
-            try
-            {
-                _unitOfWork.Commit();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                if (ex.InnerException.InnerException.Message.Contains("IX_USER_USERNAME"))
-                    DomainEvent.Raise<DomainNotification>(new DomainNotification("User", "Este nome de usuário já está sendo utilizado."));
-                else
-                    DomainEvent.Raise<DomainNotification>(new DomainNotification("User", "Falha ao cadastrar usuário"));
 
-                return false;
-            }
+            _unitOfWork.Commit();
+            return true;
         }
     }
 }
