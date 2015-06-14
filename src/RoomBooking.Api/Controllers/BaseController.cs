@@ -25,9 +25,7 @@ namespace RoomBooking.Api.Controllers
             else
                 ResponseMessage = Request.CreateResponse(HttpStatusCode.OK, result);
 
-            var tsc = new TaskCompletionSource<HttpResponseMessage>();
-            tsc.SetResult(ResponseMessage);
-            return tsc.Task;
+            return Task.FromResult<HttpResponseMessage>(ResponseMessage);
         }
 
         protected override void Dispose(bool disposing)
