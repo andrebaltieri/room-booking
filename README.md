@@ -1,3 +1,11 @@
-http://andrebaltieri.github.io/room-booking
+Este repositório está desatualizado, favor utilizar uma das versões abaixo, já com ASP.NET Core:
 
-http://modernwebapps.net/
+
+Versão Simplificada
+
+https://github.com/andrebaltieri/SimpleRoomBookingCore
+
+
+Versão Completa
+
+https://github.com/andrebaltieri/RoomBookingCore
